@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常见问题 | Mo Virtual Singer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','Noto Sans SC','sans-serif']},colors:{brand:{500:'#0ea5e9',600:'#0284c7'}},animation:{'blob':'blob 10s infinite'},keyframes:{blob:{'0%':{transform:'translate(0px,0px) scale(1)'},'33%':{transform:'translate(30px,-50px) scale(1.1)'},'66%':{transform:'translate(-20px,20px) scale(0.9)'},'100%':{transform:'translate(0px,0px) scale(1)'}}}}}}</script>
+    <style>body{background-color:#0f172a;color:white;overflow-x:hidden}.ambient-bg{position:fixed;inset:0;z-index:-1;overflow:hidden;background:radial-gradient(circle at 50% 0%,#1e3a8a 0%,#0f172a 70%)}.blob{position:absolute;filter:blur(80px);opacity:0.4;border-radius:50%}.glass-panel{background:rgba(255,255,255,0.03);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.08)}details[open] summary~*{animation:fadeIn 0.3s ease-out}@keyframes fadeIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}details summary::-webkit-details-marker{display:none}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.15);border-radius:3px}</style>
+</head>
+<body class="antialiased">
+    <div class="ambient-bg"><div class="blob bg-blue-600 w-96 h-96 top-0 left-1/4 animate-blob"></div><div class="blob bg-cyan-500 w-96 h-96 top-1/3 right-1/4 animate-blob" style="animation-delay:2s"></div><div class="blob bg-indigo-600 w-96 h-96 bottom-0 left-1/3 animate-blob" style="animation-delay:4s"></div></div>
+
+    <div class="w-full py-2 text-xs font-medium border-b border-white/5 bg-black/20 backdrop-blur-md relative z-50"><div class="max-w-7xl mx-auto px-4 flex justify-between items-center"><span class="text-slate-400 hidden sm:inline"><i class="fas fa-link mr-1"></i> 生态与友链：</span><div class="flex items-center gap-4 sm:gap-6 ml-auto"><a href="https://www.bilibili.com" target="_blank" class="flex items-center gap-1.5 text-slate-300 hover:text-[#FB7299] transition-colors"><i class="fab fa-bilibili"></i> Bilibili</a><a href="https://dreamtonics.com/synthesizerv/" target="_blank" class="flex items-center gap-1.5 text-slate-300 hover:text-[#00d4ff] transition-colors"><i class="fas fa-wave-square"></i> SynthV</a></div></div></div>
+
+    <nav class="sticky top-0 z-40 w-full border-b border-white/5 bg-slate-900/60 backdrop-blur-xl"><div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between"><a href="index.html" class="flex items-center gap-2"><div class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-500 to-cyan-400 flex items-center justify-center text-white font-bold">M</div><span class="font-bold text-xl tracking-tight">MVS <span class="text-brand-500 font-light">Studio</span></span></a><div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300"><a href="index.html#core" class="hover:text-white transition-colors">核心特性</a><a href="tutorials.html" class="hover:text-white transition-colors">使用教程</a><a href="download.html" class="hover:text-white transition-colors">软件下载</a><a href="faq.html" class="text-white transition-colors">FAQ</a><a href="https://github.com/mojing666awa/Mo-Virtual-Singer" target="_blank" class="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all border border-white/10"><i class="fab fa-github mr-1"></i> GitHub</a></div><button id="mobile-menu-btn" class="md:hidden text-white text-xl"><i class="fas fa-bars"></i></button></div><div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 backdrop-blur-xl border-b border-white/5 px-4 py-4 space-y-3 text-sm"><a href="index.html" class="block text-slate-300">首页</a><a href="tutorials.html" class="block text-slate-300">使用教程</a><a href="download.html" class="block text-slate-300">软件下载</a><a href="faq.html" class="block text-white font-medium">FAQ</a><a href="https://github.com/mojing666awa/Mo-Virtual-Singer" target="_blank" class="block text-brand-500"><i class="fab fa-github mr-2"></i>GitHub 仓库</a></div></nav>
+
+    <main class="max-w-4xl mx-auto px-4 py-16 min-h-screen">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold mb-4">❓ 常见问题</h1>
+            <p class="text-slate-400 mb-8">找不到答案？请前往 <a href="https://github.com/mojing666awa/Mo-Virtual-Singer/issues" target="_blank" class="text-brand-500 underline hover:text-brand-400">GitHub Issues</a> 提问</p>
+            <div class="relative max-w-lg mx-auto"><i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-slate-500"></i><input type="text" id="faq-search" placeholder="搜索问题..." class="w-full bg-white/5 border border-white/10 rounded-xl pl-12 pr-4 py-3 text-sm focus:outline-none focus:border-brand-500 focus:bg-white/10 transition-all"></div>
+        </div>
+
+        <div class="space-y-8" id="faq-container">
+            <!-- 安装与配置 -->
+            <div class="faq-category">
+                <h3 class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-4 pl-2">安装与配置</h3>
+                <div class="space-y-3">
+                    <details class="glass-panel rounded-xl group cursor-pointer">
+                        <summary class="px-6 py-4 font-medium flex items-center justify-between list-none">MVS 最低需要什么显卡？<i class="fas fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform duration-300"></i></summary>
+                        <div class="px-6 pb-4 text-sm text-slate-400 leading-relaxed">最低要求为 <strong>NVIDIA RTX 2060 (6GB VRAM)</strong> 或同等性能显卡。推荐使用 RTX 3060 12GB 及以上以获得流畅的训练体验。Apple Silicon M1/M2/M3 全系列原生支持。</div>
+                    </details>
+                    <details class="glass-panel rounded-xl group cursor-pointer">
+                        <summary class="px-6 py-4 font-medium flex items-center justify-between list-none">RTX 2060 能正常训练吗？会不会爆显存？<i class="fas fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform duration-300"></i></summary>
+                        <div class="px-6 pb-4 text-sm text-slate-400 leading-relaxed">可以正常训练。MVS 内置自适应批处理（Dynamic Batching）和 FP16 混合精度，RTX 2060 6GB 显存下可稳定运行。建议在 config 中设置 <code class="bg-black/30 px-1 rounded text-xs">precision: 16</code> 并适当减小 batch_size。</div>
+                    </details>
+                    <details class="glass-panel rounded-xl group cursor-pointer">
+                        <summary class="px-6 py-4 font-medium flex items-center justify-between list-none">Windows 上提示 CUDA 未找到怎么办？<i class="fas fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform duration-300"></i></summary>
+                        <div class="px-6 pb-4 text-sm text-slate-400 leading-relaxed">请确认已安装 CUDA Toolkit 12.1，且 PyTorch 版本匹配：<code class="bg-black/30 px-1 rounded text-xs">pip install torch --index-url https://download.pytorch.org/whl/cu121</code>。MVS 的 MAS 模块已预编译，无需额外安装 Visual Studio。</div>
+                    </details>
+                    <details class="glass-panel rounded-xl group cursor-pointer">
+                        <summary class="px-6 py-4 font-medium flex items-center justify-between list-none">没有 NVIDIA 显卡可以用吗？<i class="fas fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform duration-300"></i></summary>
+                        <div class="px-6 pb-4 text-sm text-slate-400 leading-relaxed">Apple Silicon Mac 可通过 MPS 后端训练。纯 CPU 仅建议用于推理调试，训练速度极慢（约为 RTX 2060 的 1/50）。AMD 显卡暂不支持，敬请期待 ROCm 适配。</div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- 训练与数据 -->
+            <div class="faq-category">
+                <h3 class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-4 pl-2">训练与数据</h3>
+                <div class="space-y-3">
+                    <details class="glass-panel rounded-xl group cursor-pointer">
+                        <summary class="px-6 py-4 font-medium flex items-center justify-between list-none">训练一个可用声库最少需要多少数据？<i class="fas fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform duration-300"></i></summary>
+                        <div class="px-6 pb-4 text-sm text-slate-400 leading-relaxed">最低约 30 分钟干净干声可获得基本可用的声库。推荐 1-2 小时以获得细腻的情感表现力。MVS 的姿态空间预训练可在小数据集上显著提升音质。</div>
+                    </details>
+                    <details class="glass-panel rounded-xl group cursor-pointer">
+                        <summary class="px-6 py-4 font-medium flex items-center justify-between list-none">RTX 2060 训练一个声库大概要多久？<i class="fas fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform duration-300"></i></summary>
+                        <div class="px-6 pb-4 text-sm text-slate-400 leading-relaxed">以 1 小时数据集、FP16 精度为例：姿态预训练约 8-12 小时，端到端微调约 4-6 小时。总计约 12-18 小时。建议使用 nohup 或 tmux 后台运行。</div>
+                    </details>
+                    <details class="glass-panel rounded-xl group cursor-pointer">
+                        <summary class="px-6 py-4 font-medium flex items-center justify-between list-none">支持哪些语言的声库训练？<i class="fas fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform duration-300"></i></summary>
+                        <div class="px-6 pb-4 text-sm text-slate-400 leading-relaxed">目前官方支持中文（普通话）、日语、英语。其他语种可通过自定义音素表与 G2P 模块扩展，详见教程 EP.05。</div>
+                    </details>
+                    <details class="glass-panel rounded-xl group cursor-pointer">
+                        <summary class="px-6 py-4 font-medium flex items-center justify-between list-none">数据集中有底噪/混响怎么办？<i class="fas fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform duration-300"></i></summary>
+                        <div class="px-6 pb-4 text-sm text-slate-400 leading-relaxed">MVS 预处理脚本内置降噪模块：<code class="bg-black/30 px-1 rounded text-xs">mvs-preprocess --denoise --dereverb</code>。但强烈建议使用干净录音棚素材，后期降噪会损失高频细节。</div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- 推理与编辑器 -->
+            <div class="faq-category">
+                <h3 class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-4 pl-2">推理与编辑器</h3>
+                <div class="space-y-3">
+                    <details class="glass-panel rounded-xl group cursor-pointer">
+                        <summary class="px-6 py-4 font-medium flex items-center justify-between list-none">MVS 必须搭配 OpenUtau 使用吗？<i class="fas fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform duration-300"></i></summary>
+                        <div class="px-6 pb-4 text-sm text-slate-400 leading-relaxed">不必须。OpenUtau 是推荐的图形化编辑器，但 MVS 也提供 Python SDK 和命令行推理工具，可独立使用。ONNX 模型也可集成到其他 DAW 中。</div>
+                    </details>
+                    <details class="glass-panel rounded-xl group cursor-pointer">
+                        <summary class="px-6 py-4 font-medium flex items-center justify-between list-none">推理时延迟很高怎么办？<i class="fas fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform duration-300"></i></summary>
+                        <div class="px-6 pb-4 text-sm text-slate-400 leading-relaxed">RTX 2060 推理单句约 200-400ms，属于正常范围。若延迟过高，请检查是否误用 CPU 模式，或在 OpenUtau 设置中切换至 GPU 渲染后端。</div>
+                    </details>
+                    <details class="glass-panel rounded-xl group cursor-pointer">
+                        <summary class="px-6 py-4 font-medium flex items-center justify-between list-none">生成的歌声有电音/机械感？<i class="fas fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform duration-300"></i></summary>
+                        <div class="px-6 pb-4 text-sm text-slate-400 leading-relaxed">通常是训练步数不足或数据质量问题。建议检查 TensorBoard 中的 mel loss 曲线是否收敛，并确认训练数据采样率为 44100Hz。也可尝试增大姿态空间的维度。</div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- 许可与商业化 -->
+            <div class="faq-category">
+                <h3 class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-4 pl-2">许可与商业化</h3>
+                <div class="space-y-3">
+                    <details class="glass-panel rounded-xl group cursor-pointer">
+                        <summary class="px-6 py-4 font-medium flex items-center justify-between list-none">MVS 引擎本身可以商用吗？<i class="fas fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform duration-300"></i></summary>
+                        <div class="px-6 pb-4 text-sm text-slate-400 leading-relaxed">可以。MVS 引擎采用 Apache-2.0 / MIT 双许可，对生成内容无任何限制。但<strong>声库的许可由声库作者自行决定</strong>，使用前请务必查看该声库附带的 LICENSE 文件。</div>
+                    </details>
+                    <details class="glass-panel rounded-xl group cursor-pointer">
+                        <summary class="px-6 py-4 font-medium flex items-center justify-between list-none">我训练的声库可以出售吗？<i class="fas fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform duration-300"></i></summary>
+                        <div class="px-6 pb-4 text-sm text-slate-400 leading-relaxed">完全可以。只要您拥有训练数据的合法授权，声库的版权归您所有。我们鼓励在社区中分享和销售优质声库。</div>
+                    </details>
+                    <details class="glass-panel rounded-xl group cursor-pointer">
+                        <summary class="px-6 py-4 font-medium flex items-center justify-between list-none">修改 MVS 源码后需要开源吗？<i class="fas fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform duration-300"></i></summary>
+                        <div class="px-6 pb-4 text-sm text-slate-400 leading-relaxed">不需要。Apache-2.0 / MIT 均为宽松许可，允许闭源修改和商业分发。但我们欢迎回馈社区，提交 PR 让项目变得更好。</div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-white/5 py-10 px-4 mt-10 text-center text-xs text-slate-500 bg-slate-900/50 backdrop-blur-sm"><p>&copy; 2026 mojing666 & MVS Contributors. Licensed under Apache-2.0 / MIT.</p></footer>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click',()=>{document.getElementById('mobile-menu').classList.toggle('hidden')});
+        document.getElementById('faq-search').addEventListener('input',function(e){
+            const q=e.target.value.toLowerCase();
+            let visibleCount=0;
+            document.querySelectorAll('.faq-category').forEach(cat=>{
+                let catVisible=0;
+                cat.querySelectorAll('details').forEach(d=>{
+                    const match=d.textContent.toLowerCase().includes(q);
+                    d.closest('.glass-panel').style.display=match?'':'none';
+                    if(match)catVisible++;
+                });
+                cat.style.display=catVisible>0?'':'none';
+                visibleCount+=catVisible;
+            });
+            if(visibleCount===0&&q.length>0){
+                // 可选：显示无结果提示
+            }
+        });
+    </script>
+</body>
+</html>
